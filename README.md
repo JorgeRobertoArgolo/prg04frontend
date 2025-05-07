@@ -9,6 +9,7 @@ infraestructure/
         icons/       -> Icons and favicons.
         images/      -> General images used in the site.
         js/          -> JavaScript scripts for website functionality.
+        audios/      -> Audios used on the pages
     
     pages/
         about/         -> Section or page related to "About" information.
