@@ -86,7 +86,7 @@ button + button {
 }
 
 .hero {
-    height: 50vh;
+    height: 70vh;
     background-color: var(--color-secondary);
 }
 
@@ -127,4 +127,56 @@ button + button {
 .illustration img {
     width: 450px;
      margin-top: 5rem;
+}
+
+.about-content {
+    text-align: center;
+    margin: 5rem 0;
+}
+
+.about-content h2 {
+    font-size: 2.6rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.about-content p {
+    font-size: 1.6rem;
+    line-height: 2rem;
+    max-width: 700px;
+    margin: auto;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    margin: 5rem 0;
+}
+
+.feature {
+    background-color: var(--color-background-secondary);
+    max-width: 350px;
+    padding: 1.5rem;
+}
+
+.feature img {
+    display: block;
+    padding: 10px;
+    background-color: var(--color-secondary);
+    border-radius: 50%;
+    margin: auto;
+}
+
+.feature h3 {
+    margin-top: 1.5rem;
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.feature p {
+    text-align: center;
+    font-size: 1.4rem;
+    line-height: 2rem;
 }
