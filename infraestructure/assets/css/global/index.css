@@ -180,3 +180,26 @@ button + button {
     font-size: 1.4rem;
     line-height: 2rem;
 }
+
+.footer {
+    background-color: var(--color-footer);
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.footer p {
+    font-size: 1.2rem;
+    color: white;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
