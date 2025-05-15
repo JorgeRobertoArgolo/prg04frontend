@@ -14,17 +14,24 @@
     --color-background-secondary: #f9fafb;
 }
 
-header{
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
     display: flex;
     justify-content: space-between;
-    color: black;
-    padding: 1rem;
+    align-items: center;
+    flex-wrap: wrap;
     padding: 2rem;
+    color: black;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .logo-container {
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
 
 .logo {
@@ -39,11 +46,10 @@ header{
 }
 
 .links {
-    margin-top: 2rem;
-}
-
-.links a + a {
-    margin-left: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 1rem;
 }
 
 .links a {
@@ -54,11 +60,13 @@ header{
 
 .links a:hover {
     color: var(--color-primary);
-    text-decoration: underline;
 }
 
 .authentication-btns {
-    margin-top: 2rem;;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
 }
 
 button {
@@ -69,39 +77,32 @@ button {
     cursor: pointer;
 }
 
-button + button {
-    margin-left: 1rem;
-}
-
 .btn-outline {
     color: var(--color-primary);
     background-color: var(--color-background-secondary);
 }
 
 .btn-solid {
-    font-size: 1rem;
-    padding: 1rem;
     color: white;
     background-color: var(--color-primary);
 }
 
 .hero {
-    height: 70vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
     background-color: var(--color-secondary);
+    padding: 5rem 2rem;
 }
 
-
 .hero-content {
-    width: 700px;
-    float: left;
-    margin-top: 5rem;
-    margin-left: 5rem;
+    max-width: 600px;
 }
 
 .hero-content > h1 {
-    color: black;
     font-size: 3rem;
-
+    color: black;
 }
 
 .hero-content > p {
@@ -113,24 +114,20 @@ button + button {
 }
 
 .hero-btns {
-    margin-top: 4rem;
-}
-
-.hero-btns {
+    display: flex;
+    gap: 1rem;
     margin-top: 3rem;
 }
 
-.illustration {
-    float: right;
-}
-
 .illustration img {
-     margin-top: 5rem;
+    max-width: 100%;
+    height: auto;
+    margin-top: 2rem;
 }
 
 .about-content {
     text-align: center;
-    margin: 5rem 0;
+    margin: 5rem 2rem;
 }
 
 .about-content h2 {
@@ -148,14 +145,18 @@ button + button {
 
 .features {
     display: flex;
-    justify-content: space-around;
-    margin: 5rem 0;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin: 5rem 2rem;
 }
 
 .feature {
     background-color: var(--color-background-secondary);
     max-width: 350px;
     padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
 
 .feature img {
@@ -182,7 +183,7 @@ button + button {
 
 #how-works {
     margin: 5rem 0;
-    padding: 3rem;
+    padding: 3rem 2rem;
     background-color: var(--color-background-secondary);
 }
 
@@ -205,13 +206,17 @@ button + button {
 }
 
 .steps {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
     text-align: center;
 }
 
 .step {
-    display: inline-block;
     max-width: 300px;
     padding: 1.5rem;
+    border-radius: 1rem;
 }
 
 .step-number {
@@ -239,10 +244,6 @@ button + button {
     line-height: 2rem;
 }
 
-
-
-
-
 .footer {
     background-color: var(--color-footer);
     color: white;
@@ -264,4 +265,91 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .links {
+        justify-content: center;
+        margin-top: 1rem;
+    }
+
+    .authentication-btns {
+        justify-content: center;
+        margin-top: 1rem;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content {
+        margin: 0;
+    }
+
+    .illustration {
+        margin-top: 2rem;
+    }
+
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .steps {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .logo-title {
+        font-size: 1.5rem;
+    }
+
+    .links {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .links a {
+        font-size: 1rem;
+    }
+
+    button {
+        padding: 0.7rem;
+        font-size: 0.9rem;
+    }
+
+    .hero-content > h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content > p {
+        font-size: 1.2rem;
+    }
+
+    .about-content h2,
+    .how-works-content h2 {
+        font-size: 2rem;
+    }
+
+    .about-content p,
+    .how-works-content p,
+    .feature p,
+    .step-description {
+        font-size: 1.2rem;
+    }
+
+    .feature h3,
+    .step-title {
+        font-size: 1.4rem;
+    }
 }
