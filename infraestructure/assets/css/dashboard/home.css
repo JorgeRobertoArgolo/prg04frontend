@@ -1,0 +1,114 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-destak: #16A34A;
+    --color-background: #f0f9f0;
+    --color-footer: #1f2937;
+}
+
+body {
+    background-color: var(--color-background);
+    padding: 20px;
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+#search {
+    padding: 0.3rem;
+    border-radius: 10px;
+    width: 75%;
+    border: 1px solid #ccc;
+}
+
+#register {
+    background-color: var(--color-destak);
+    color: white;
+    padding: 0.3rem;
+    border: none;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    width: 50%;
+}
+
+#home-screen {
+    background-color: var(--color-destak);
+    color: white;
+    padding: 0.3rem;
+    border: none;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    width: 50%;
+}
+
+.content table {
+    width: 90%;
+    margin: 0 auto;
+    border-collapse: separate;     /* IMPORTANTE */
+    border-spacing: 0;             /* Sem espaço extra entre células */
+    border: 1px solid #ccc;
+    border-radius: 10px;           /* Arredondar bordas da tabela */
+    overflow: hidden;
+
+}
+
+.content table th {
+    background-color: var(--color-destak);
+    color: white;
+    padding: 0.5rem;
+}
+
+.content table tr{
+   background-color: white;
+   color: black;
+}
+
+.content table td {
+    padding: 0.4rem;
+    border-bottom: 1px solid #ccc;
+}
+
+td button {
+    background-color: white;
+    color: white;
+    padding: 0.3rem;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    .top {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+
+    #search {
+        width: 25%;
+    }
+
+    #register {
+        width: 25%;
+    }
+
+    #home-screen {
+        width: 25%;
+    }
+
+}

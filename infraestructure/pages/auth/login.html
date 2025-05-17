@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/infraestructure/assets/css/auth/login.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <form action="/infraestructure/pages/dashboard/home.html" method="GET" class="form-container">
+            <h1 class="title">Login</h1>
+            <div id="email-container">
+                <label for="email">Email : </label>
+                <input type="email" name="email" id="email" required placeholder="Digite seu email">
+            </div>
+            <div id="password-container">
+                <label for="password">Senha : </label>
+                <input type="password" name="password" id="password" required placeholder="Digite sua senha" pattern=".{8,}" title="A senha deve ter pelo menos 8 caracteres">
+            </div>
+            <div id="buttons-container">
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpar</button>
+            </div>
+        </form>
+    </main>
+    <footer class="footer">
+       <p>
+         Made by <a href="https://github.com/JorgeRobertoArgolo" target="_blank">Jorge Roberto Argolo De Oliveira</a>
+       </p>
+    </footer>
+</body>
+</html>

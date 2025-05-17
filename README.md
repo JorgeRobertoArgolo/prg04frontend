@@ -12,6 +12,7 @@ infraestructure/
         audios/      -> Audios used on the pages
     
     pages/
-        about/         -> Section or page related to "About" information.
-        contact/       -> Section or page related to "Contact" information.
         index.html     -> Main landing page (Home page) of the site.
+        activities/ -> sandbox to activities
+        auth/ -> authentication screens: login, register, etc
+        dashbaord/ -> application's screens
